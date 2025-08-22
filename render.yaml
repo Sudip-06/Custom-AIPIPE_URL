@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ai-pipe-service
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Optional auth. If you set it, your agent must proxy with Authorization header.
+      - key: AIPIPE_TOKEN
+        sync: false
+    healthCheckPath: /healthz
+    autoDeploy: true

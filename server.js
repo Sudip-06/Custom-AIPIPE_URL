@@ -9,7 +9,7 @@ app.use(morgan("tiny"));
 
 const {
   PORT = 10000,        // Render injects this
-  AIPIPE_TOKEN = ""     // Optional: set to require Authorization: Bearer <token>
+  AIPIPE_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjIzZjMwMDQyNDZAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.26Lx5mqWrRyKj_9NCXxDsb4-gqvZvIYqjC2GN-8XNlE"     // Optional: set to require Authorization: Bearer <token>
 } = process.env;
 
 /** Optional bearer auth */
